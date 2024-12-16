@@ -6,6 +6,7 @@ export type ProductType = {
   btnText?: string;
   className?: string;
 };
+
 export type TitleType = {
   subtitle: string;
   title: string;

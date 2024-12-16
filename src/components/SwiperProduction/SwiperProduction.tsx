@@ -11,12 +11,12 @@ import {
 import ProductItem from "../../components/ProductItem/ProductItem";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
-import "swiper/css";
 import "./SwiperProducts.css";
 import { LuArrowBigLeft, LuArrowBigRight } from "react-icons/lu";
 import { useRef } from "react";
 import { Navigation, Pagination } from "swiper/modules";
-
+import "/node_modules/swiper/swiper.min.css";
+// import "swiper/swiper-bundle.css"; // General Swiper CSS
 const SwiperProduction = () => {
   const swiperRef = useRef(null);
 
@@ -100,14 +100,14 @@ const SwiperProduction = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="swiper-button-prev border-main_color border-[1px] absolute top-[50%] z-40 left-[-8px] transform -translate-y-1/2 p-3 cursor-pointer bg-transparent rounded-full hover:bg-woo_commerce hover:text-white transition-all ease delay-300 duration-300">
+          <div className="swiper-button-prev border-main_color border-[1px] absolute top-[50%] z-40 left-[-14px] transform -translate-y-1/2 p-3  cursor-pointer  bg-transparent rounded-full hover:bg-woo_commerce hover:text-white  transition-all ease delay-300 duration-300">
             <LuArrowBigLeft />
           </div>
-          <div className="swiper-button-next absolute border-main_color border-[1px] top-[50%] z-40 right-[-8px] transform -translate-y-1/2 p-3 cursor-pointer bg-transparent rounded-full hover:bg-woo_commerce hover:text-white transition-all ease delay-300 duration-300">
+          <div className="swiper-button-next absolute border-main_color border-[1px] top-[50%] z-40 right-[-14px] transform -translate-y-1/2 p-3 cursor-pointer bg-transparent rounded-full hover:bg-woo_commerce hover:text-white transition-all ease delay-300 duration-300">
             <LuArrowBigRight />
           </div>
 
-          <div className="swiper-pagination flex justify-center gap-2 pt-4 h-7 w-full  overflow-auto"></div>
+          <div className="swiper-pagination flex justify-center gap-2  pt-4 h-7 w-[100px] "></div>
         </div>
       </div>
     </section>
